@@ -1,7 +1,7 @@
-import searchImage from '../../assets/img/search.svg';
-import searchDark from '../../assets/img/searchDark.svg';
-import close from '../../assets/img/close.svg';
-import closeDark from '../../assets/img/closeDark.svg';
+import searchImage from '../../../public/img/search.svg';
+import searchDark from '../../../public/img/searchDark.svg';
+import close from '../../../public/img/close.svg';
+import closeDark from '../../../public/img/closeDark.svg';
 import style from './Search.module.scss';
 import { ChangeEvent, useContext } from 'react';
 import { DarkThemeContext } from '../../App';

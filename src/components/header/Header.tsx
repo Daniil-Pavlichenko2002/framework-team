@@ -1,8 +1,8 @@
 import { useContext } from 'react';
-import logo from '../../assets/img/logo.svg';
-import logoDark from '../../assets/img/logoDark.svg';
-import imageBtn from '../../assets/img/themeBtnImage.svg';
-import imageBtnDark from '../../assets/img/theme=lightOn, state=Hover.svg';
+import logo from '../../../public/img/logo.svg';
+import logoDark from '../../../public/img/logoDark.svg';
+import imageBtn from '../../../public/img/themeBtnImage.svg';
+import imageBtnDark from '../../../public/img/theme=lightOn, state=Hover.svg';
 import style from './Header.module.scss';
 import { DarkThemeContext } from '../../App';
 
