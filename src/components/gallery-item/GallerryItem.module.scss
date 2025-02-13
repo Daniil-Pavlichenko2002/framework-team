@@ -1,0 +1,137 @@
+.gelleryItem {
+  position: relative;
+  overflow: hidden;
+  width: 392px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 1270px) {
+    width: 352px;
+  }
+  @media (max-width: 768px) {
+    width: 280px;
+    height: 185px;
+  }
+
+  &:hover {
+    .image {
+      transform: scale(1.1);
+    }
+    .block1 {
+      transform: translateY(200px);
+      transition: all 0.3s ease-in;
+    }
+    .block2 {
+      transition: all 0.3s ease-in;
+      transform: translateY(0);
+    }
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    @media (max-width: 1270px) {
+        // max-width: 352px;
+      }
+      @media (max-width: 768px) {
+        // max-width: 280px;
+      }
+  }
+  .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 82px;
+    background: var(--primary-white);
+    @media (max-width: 1270px) {
+      height: 66px;
+    }
+    @media (max-width: 768px) {
+      width: 236px;
+      height: 45px;
+    }
+  }
+
+  .block1 {
+    transform: translateX(0);
+    transition: all 0.3s ease-in;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    h2 {
+      font-family: var(--second-family);
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: var(--primary-black);
+    }
+    p {
+      padding-top: 8px;
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: var(--accent-red);
+    }
+    @media (max-width: 1270px) {
+      top: 12px;
+      left: 12px;
+    }
+    @media (max-width: 768px) {
+      top: 8px;
+      h2 {
+        font-size: 12px;
+      }
+      p {
+        padding-top: 4px;
+        font-size: 8px;
+      }
+    }
+  }
+  .block2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transform: translateX(-300px);
+    transition: all 0.3s ease-in;
+    h2 {
+      font-family: var(--second-family);
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: var(--primary-black);
+    }
+    p {
+      padding-top: 8px;
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: var(--accent-red);
+    }
+    @media (max-width: 1270px) {
+      top: 12px;
+      left: 12px;
+    }
+    @media (max-width: 768px) {
+      top: 8px;
+      h2 {
+        font-size: 12px;
+      }
+      p {
+        padding-top: 4px;
+        font-size: 8px;
+      }
+    }
+  }
+  .contentDark {
+    background: var(--primary-black);
+    h2{
+      color: var(--primary-light-gray);
+    }
+  }
+}

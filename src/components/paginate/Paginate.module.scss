@@ -1,0 +1,15 @@
+.paginate {
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+.paginateDark {
+  li{
+    div{
+       color: var(--primary-light-gray);
+    }
+    button {
+      color: var(--primary-light-gray);
+    }
+  }
+}

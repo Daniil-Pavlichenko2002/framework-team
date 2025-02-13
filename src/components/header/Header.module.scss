@@ -1,0 +1,23 @@
+@import url(../../index.scss);
+.header {
+  background-color: black;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.themeBtn {
+    width: 40px;
+    height: 40px;
+  &:hover {
+    background-image: url('../../assets/img/theme=darkOn\,\ state=Hover.svg');
+    img {
+      position: absolute;
+      display: none;
+    }
+  }
+}
