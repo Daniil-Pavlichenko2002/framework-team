@@ -3,11 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Daniil-Pavlichenko2002.github.io/framework-team",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -34,6 +36,7 @@
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.18",
+    "gh-pages": "6.3.0",
     "globals": "^15.14.0",
     "prettier": "^3.5.0",
     "typescript": "~5.7.2",

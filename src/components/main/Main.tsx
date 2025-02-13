@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import Search from '../search/Search';
 import style from './Main.module.scss';
 import GalleryItem from '../gallery-item/GalleryItem';
